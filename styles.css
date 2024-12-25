@@ -8,19 +8,24 @@ body {
   height: 100vh;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
+  flex-direction: column;
 }
 
 .container {
   position: relative;
   width: 100%;
-  max-width: 400px; /* Responsive width */
+  max-width: 90%; /* Shrinks the container width */
   height: 500px;
   perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensures centering of the content inside */
 }
 
 .card {
   position: absolute;
   width: 100%;
+  max-width: 350px; /* Restrict max-width to prevent overflow */
   height: 100%;
   background: #fff;
   border-radius: 20px;
@@ -105,6 +110,14 @@ h1, h2 {
   .container {
     max-width: 90%;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%; /* Ensure the card width shrinks for smaller screens */
+    padding: 15px;
   }
 
   h1, h2 {
