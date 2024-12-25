@@ -1,3 +1,4 @@
+// Add a fifth page in the flow
 const cards = document.querySelectorAll('.card');
 let currentCard = 0;
 

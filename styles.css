@@ -43,29 +43,53 @@ body {
 
 .card1 {
   background: url('https://source.unsplash.com/350x500/?christmas') no-repeat center/cover;
-  z-index: 3;
+  z-index: 5;
 }
 
 .card2 {
   background: #faf3e0;
-  z-index: 2;
+  z-index: 4;
   opacity: 0;
   transform: scale(0.8) translateY(50px);
 }
 
 .card3 {
   background: #ffe4e1;
-  z-index: 1;
+  z-index: 3;
   opacity: 0;
   transform: scale(0.6) translateY(100px);
 }
 
 .card4 {
   background: #f0e5d8;
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.5) translateY(150px);
+}
+
+.card5 {
+  background: #d1f0e6;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0.4) translateY(200px);
+}
+.card5 {
+  background: #f9f9f9;
   z-index: 0;
   opacity: 0;
   transform: scale(0.5) translateY(150px);
 }
+
+.link {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 
 h1, h2 {
   margin: 10px 0;
@@ -90,7 +114,7 @@ h1, h2 {
   color: black; /* Ensure headings are black */
 }
 
-.card2 p, .card3 p, .card4 p {
+.card2 p, .card3 p, .card4 p, .card5 p {
   font-size: 1.2rem;
   color: black; /* Ensure all text is black */
   font-family: 'Merriweather', serif;
@@ -102,7 +126,7 @@ h1, h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional text shadow for better contrast */
 }
 
-.card2, .card3, .card4 {
+.card2, .card3, .card4, .card5 {
   transition: transform 1s ease, opacity 1s ease;
 }
 
